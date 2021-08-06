@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using My_City_News.MVVM.Model;
 
 namespace My_City_News.MVVM.ViewModel
 {
