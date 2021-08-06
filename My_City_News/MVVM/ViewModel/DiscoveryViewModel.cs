@@ -38,7 +38,7 @@ namespace My_City_News.MVVM.ViewModel
         public void OnPropertyChanged([CallerMemberName] string prop = "")
             => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(prop));
 
-        public ViewWindowViewModel(string headerString, byte[] imagePath, string linkString)
+        public DiscoveryViewModel(string headerString, byte[] imagePath, string linkString)
         {
             this.ImagePath = imagePath;
             this.HeaderString = headerString;
