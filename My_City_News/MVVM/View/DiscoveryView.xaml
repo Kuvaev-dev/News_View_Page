@@ -9,18 +9,20 @@
              d:DesignHeight="450" d:DesignWidth="800"
              Background="White">
     <Grid>
-        <StackPanel Orientation="Vertical" Margin="0,0,650,0">
-            <Image Height="100" Width="145" Name="newImage1"/>
-            <Image Height="100" Width="145" Name="newImage2"/>
-            <Image Height="100" Width="145" Name="newImage3"/>
-            <Image Height="100" Width="145" Name="newImage4"/>
-        </StackPanel>
+        <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
 
-        <StackPanel Orientation="Vertical" Margin="150,0,0,0">
-            <Label Height="100" Width="650" FontSize="30" Content="{Binding FillParams}" Name="new1" FontFamily="/View/Fonts/Poppins-Regular"/>
-            <Label Height="100" Width="650" FontSize="30" Content="{Binding FillParams}" Name="new2" FontFamily="/View/Fonts/Poppins-Regular"/>
-            <Label Height="100" Width="650" FontSize="30" Content="{Binding FillParams}" Name="new3" FontFamily="/View/Fonts/Poppins-Regular"/>
-            <Label Height="100" Width="650" FontSize="30" Content="{Binding FillParams}" Name="new4" FontFamily="/View/Fonts/Poppins-Regular"/>
-        </StackPanel>
+            <TextBlock x:Name="headerTextBlock" Text="{Binding HeaderString}" Grid.Row="0" FontSize="24" FontWeight="Bold" Margin="20" TextWrapping="Wrap"></TextBlock>
+            <Image x:Name="newsImage" Source="{Binding ImagePath}" Grid.Row="1" Stretch="Fill" Margin="20"  Width="700" Height="250"></Image>
+          
+            <TextBlock x:Name="bodyTextBlock" Grid.Row="2" FontSize="16" LineHeight="20" Margin="20" TextWrapping="Wrap">
+                <TextBlock.Inlines>
+                    <Run FontWeight="Bold" Text="{Binding MainParagraph}"></Run>
+                    <Run Text="{Binding BodyString}"></Run>
+                </TextBlock.Inlines>
+            </TextBlock>
     </Grid>
 </UserControl>
