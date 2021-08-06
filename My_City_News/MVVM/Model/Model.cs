@@ -1,6 +1,7 @@
 ﻿using HtmlAgilityPack;
 using My_City_News.MVVM.Model.Core;
 using My_City_News.MVVM.ViewModel;
+using My_City_News.MVVM.Model.Custom_Element;
 using System;
 using System.Collections.Generic;
 using System.Text;
