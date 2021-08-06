@@ -14,6 +14,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Linq;
+using My_City_News.MVVM.ViewModel;
+using My_City_News.MVVM.Model;
 
 namespace My_City_News.MVVM.View
 {
