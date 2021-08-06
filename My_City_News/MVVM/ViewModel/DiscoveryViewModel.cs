@@ -59,5 +59,6 @@ namespace My_City_News.MVVM.ViewModel
             paragraphs.Remove(paragraphs[0]);
 
             paragraphs.ForEach(x => BodyString += "\r\n\r\n" + x.InnerText);
+        }
     }
 }
