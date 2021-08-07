@@ -1,9 +1,9 @@
-﻿using _5692comuaParser.View;
-using _5692comuaParser.View.ViewModel;
+﻿using My_City_News.View;
+using My_City_Newd.View.ViewModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace _5692comuaParser.Model.Custom_Element.ViewModel
+namespace My_City_News.Model.Custom_Element.ViewModel
 {
     public class NewsViewModel : INotifyPropertyChanged
     {
