@@ -24,17 +24,6 @@ namespace _5692comuaParser.Model.Custom_Element
                 client.DownloadFile(imagePath, $"{MainLogic.folderName}\\{++MainLogic.count}.jpg");
             }
 
-            /*ImageSource использует агрессивное кеширование при загрузке фотографии, что приводило к невозможности
-            их удаления (файл занимался другим процессом). Оказывается, что в качестве источника фотографии отлично подойдёт
-            массив байтов, который сейчас и используется.*/
-
-            //ImageSource imageSource = null;
-            //try
-            //{
-            //    imageSource = new ImageSourceConverter().ConvertFromString($"{MainLogic.folderName}\\{MainLogic.count}.jpg") as ImageSource;
-            //}
-            //catch (System.Exception e) { }
-
             this.DataContext = new NewsViewModel()
             {
                 CategoryString = categoryString,
