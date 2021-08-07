@@ -1,4 +1,4 @@
-﻿using _5692comuaParser.Model.Custom_Element.ViewModel;
+﻿using My_City_News.Model.Custom_Element.ViewModel;
 using System;
 using System.IO;
 using System.Net;
@@ -8,7 +8,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 
-namespace _5692comuaParser.Model.Custom_Element
+namespace My_City_News.Model.Custom_Element
 {
     /// <summary>
     /// Логика взаимодействия для NewsControl.xaml
