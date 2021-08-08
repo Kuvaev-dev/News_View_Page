@@ -9,7 +9,7 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace My_City_News.MVVM.Model
 {
-    class Model
+    public class Model
     {
         public RelayCommand HomeViewCommand { get; set; }
         public RelayCommand DiscoveryViewCommand { get; set; }
