@@ -1,5 +1,5 @@
-﻿using My_City_News.View;
-using My_City_Newd.View.ViewModel;
+﻿using My_City_News.MVVM.Model.Custom_Element.View;
+using My_City_Newd.MVVM.Model.Custom_Element ViewModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
