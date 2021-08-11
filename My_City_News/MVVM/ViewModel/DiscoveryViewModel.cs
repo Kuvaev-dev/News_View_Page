@@ -1,7 +1,11 @@
-﻿using System;
+using HtmlAgilityPack;
+using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Linq;
+using System.Net;
+using System.Runtime.CompilerServices;
 using System.Text;
-using My_City_News.MVVM.Model;
 
 namespace My_City_News.MVVM.ViewModel
 {
