@@ -1,5 +1,6 @@
-﻿using My_City_News.MVVM.Model.Custom_Element.View;
-using My_City_Newd.MVVM.Model.Custom_Element ViewModel;
+using My_City_News.MVVM.Model.Core;
+using My_City_News.MVVM.View;
+using My_City_News.MVVM.ViewModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
@@ -45,10 +46,7 @@ namespace My_City_News.Model.Custom_Element.ViewModel
         public string LinkString { get; set; }
 
         private RelayCommand clickCommand;
-        public RelayCommand ClickCommand
-        {
-            get { return clickCommand ?? new RelayCommand(act => new ViewWindow(this.HeaderString, this.ImagePath, this.LinkString).Show()); }
-        }
+        public RelayCommand ClickCommand => clickCommand ?? new RelayCommand(act => new DiscovryView(this.HeaderString, this.ImagePath, this.LinkString).Show());
 
         public event PropertyChangedEventHandler PropertyChanged;
         public void OnPropertyChanged([CallerMemberName] string prop = " ")
