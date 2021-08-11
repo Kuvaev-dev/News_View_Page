@@ -21,7 +21,7 @@ namespace My_City_News.Model.Custom_Element
 
             using (WebClient client = new WebClient())
             {
-                client.DownloadFile(imagePath, $"{MainLogic.folderName}\\{++MainLogic.count}.jpg");
+                client.DownloadFile(imagePath, $"{Model.folderName}\\{++Model.count}.jpg");
             }
 
             this.DataContext = new NewsViewModel()
@@ -30,7 +30,7 @@ namespace My_City_News.Model.Custom_Element
                 DateTimeString = dateTimeString,
                 HeaderString = headerString,
                 BodyString = bodyString,
-                ImagePath = File.ReadAllBytes($"{MainLogic.folderName}\\{MainLogic.count}.jpg"),
+                ImagePath = File.ReadAllBytes($"{Model.folderName}\\{Model.count}.jpg"),
                 LinkString = linkString
             };
         }
