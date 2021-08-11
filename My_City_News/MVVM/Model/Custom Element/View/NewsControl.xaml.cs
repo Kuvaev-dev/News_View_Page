@@ -1,4 +1,6 @@
-﻿using My_City_News.MVVM.Model.Custom_Element.ViewModel;
+using My_City_News.Model.Custom_Element.ViewModel;
+using My_City_News.MVVM.Model;
+using My_City_News.MVVM.ViewModel;
 using System;
 using System.IO;
 using System.Net;
