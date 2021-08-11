@@ -58,5 +58,6 @@ namespace My_City_News.MVVM.Model
             {
                 newsStackPanel.Children.Add(item);
             }
+        }
     }
 }
